@@ -17,13 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $readmeContent .= "## Installation\n```\n" . $installationInstructions . "\n```\n\n";
     }
     if (!empty($usage)) {
-        $readmeContent .= "## Usage\n" . $usage . "\n\n";
+        $readmeContent .= "## Utilisation\n" . $usage . "\n\n";
     }
     if (!empty($contributing)) {
-        $readmeContent .= "## Contributing\n" . $contributing . "\n\n";
+        $readmeContent .= "## Contributions\n" . $contributing . "\n\n";
     }
     if (!empty($license)) {
-        $readmeContent .= "## License\n" . $license . "\n\n";
+        $readmeContent .= "## licence\n" . $license . "\n\n";
     }
     if (!empty($contactInfo)) {
         $readmeContent .= "## Contact\n" . $contactInfo . "\n";
@@ -88,8 +88,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Usage : <textarea name="usage"></textarea><br>
             Contributions : <textarea name="contributing"></textarea><br>
             Licence : <input type="text" name="license"><br>
-            Informations de Contacte: <textarea name="contactInfo"></textarea><br>
-            <input type="submit" value="Generate README">
+            Informations de Contact : <textarea name="contactInfo"></textarea><br>
+            <input type="submit" value="Générer le README">
         </form>
     <?php endif; ?>
 </div>

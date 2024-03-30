@@ -1,3 +1,4 @@
+#scipt génération readme
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $projectTitle = strip_tags($_POST['projectTitle']);
